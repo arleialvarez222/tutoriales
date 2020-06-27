@@ -1,0 +1,66 @@
+body{
+    /* aca se define donde va haceer efecto la TIPOGRAFIA */
+     font-family: 'Lato', sans-serif;
+}
+h2{
+   font-weight: 600;
+}
+p{
+    font-weight: 300;
+}
+.contenedor{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+   
+}
+.flex{
+    display: flex;
+}
+
+.text-center{
+    text-align: center;
+}
+/* en est clase se esta transformando cada div.. */
+.columna{
+    background: rgb(230, 229, 228);
+    color: #333;
+    border: 1px solid #333;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    /* sombras, va em posicion vertical, horizontal y luego el degradado en su orden como se ve a continuacion */
+    box-shadow: 10px 10px 5px grey;
+    width: 23%;
+    box-sizing: border-box;
+}
+
+/* con fonf-size se visualiza una etiqueta mas amplia */
+.precio{
+    font-size: 50px;
+    color: #00dac7;
+}
+.btn-precio{
+    background: rgb(240, 73, 54);
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.btn-precio:hover{
+    background: rgb(235, 13, 13);
+}
+
+ @media (max-width: 1070px){
+    .columna{
+    width: 45%;
+    }
+} 
+
+@media (max-width : 600px){
+    .columna{
+    width:100%;
+    }
+} 
